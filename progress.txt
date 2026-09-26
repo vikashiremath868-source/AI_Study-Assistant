@@ -1,0 +1,5 @@
+import re
+
+def save_progress(score, percentage):
+    with open("progress.txt", "a") as file:
+        file.write(f"Score: {score}/5 | Percentage: {percentage}%\n")
